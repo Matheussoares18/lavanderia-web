@@ -1,0 +1,42 @@
+mutation createUserAccount(
+  $street: String!
+  $number: String!
+  $cep: String!
+  $state: String!
+  $city: String!
+  $name: String!
+  $senha: String!
+  $email: String!
+) {
+  createUserAccount(
+    userAccountInput: {
+      street: $street
+      number: $number
+      cep: $cep
+      state: $state
+      city: $city
+      name: $name
+      senha: $senha
+      email: $email
+    }
+  ) {
+    id
+  }
+}
+
+query getAllUserAccount {
+  getAllUserAccount {
+    id
+    name
+    email
+    senha
+    AccountAddressId
+    AccountAdress {
+      street
+      number
+      cep
+      state
+      city
+    }
+  }
+}
