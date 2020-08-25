@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import back from "../../assets/background/back.jpg";
-import { Background } from "./Style";
+import { Background, Infos } from "./Style";
 import { Menu } from "./Style";
 import About from "../About/About";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Contact from "../Contact/Contact";
+import Register from "../Register/Register";
 
 type Props = {};
 const Home: React.FC<Props> = ({}) => {
@@ -32,7 +33,11 @@ const Home: React.FC<Props> = ({}) => {
           <img src={back}></img>
         </div>
       </Background>{" "}
-      <Contact></Contact>
+      <Infos>
+        <Contact></Contact>
+        <About></About>
+        <Register></Register>
+      </Infos>
     </>
   );
 };

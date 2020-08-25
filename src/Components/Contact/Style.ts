@@ -1,11 +1,17 @@
 import styled from "styled-components";
 
 export const ContactCard = styled.div`
-  div {
+  border-bottom: solid 1px #c9c9c9;
+  height: 550px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  .contact-container {
     position: relative;
     z-index: 999;
     height: 200px;
-    width: 30%;
+    width: 50%;
 
     border-radius: 8px;
 
@@ -21,6 +27,19 @@ export const ContactCard = styled.div`
 
     p {
       font-family: "Lato", regular;
+    }
+  }
+  .img-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 50%;
+    justify-content: center;
+
+    img {
+      height: 90px;
+      width: 90px;
     }
   }
 `;

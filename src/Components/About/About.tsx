@@ -8,7 +8,7 @@ const About: React.FC<Props> = ({}) => {
   return (
     <>
       <AboutCard>
-        <div data-aos="fade-right" data-aos-delay="10">
+        <div data-aos="fade-right" data-aos-delay="500" data-aos-once="false">
           <h2>Sobre nós</h2>
 
           <p>

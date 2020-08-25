@@ -6,14 +6,22 @@ export const Background = styled.div`
 
   .background-img-container {
     img {
-      height: 1260px;
       width: 100%;
     }
   }
 `;
+export const Infos = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #f4f4f4;
+  margin-top: 135px;
+  border-bottom: solid 1px #c9c9c9;
+`;
 export const Menu = styled.div`
   height: 82px;
   z-index: 999;
+
   width: 100%;
   position: fixed;
 
